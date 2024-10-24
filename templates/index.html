@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>明日方舟 - 末日幻想战略手游</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .logo{
+            width: 150px;
+            height: 50px;
+        }
+
+        .header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00b0ff;
+        }
+
+        .hero {
+            height: 100vh;
+            background: url('../static/img/banner.png') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #00b0ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0091ea;
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: #00b0ff;
+        }
+
+        .operators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .operator-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .operator-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .operator-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .operator-info {
+            padding: 1rem;
+        }
+
+        .operator-info h3 {
+            margin-bottom: 0.5rem;
+            color: #00b0ff;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: #00b0ff;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="../static/img/logo.jpg" alt="明日方舟" />
+            </div>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#about">游戏介绍</a>
+                <a href="#operators">干员展示</a>
+                <a href="#features">游戏特色</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>明日方舟</h1>
+            <p>末日幻想战略手游 - 开启你的战术指挥之旅</p>
+            <a href="#" class="btn">立即下载</a>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2>游戏介绍</h2>
+        <p>《明日方舟》是一款策略塔防手游，游戏背景设定在被天灾肆虐的末日世界。玩家将作为罗德岛的一员，带领干员们共同对抗天灾。游戏以独特的美术风格、富有深度的剧情和创新的玩法机制著称。</p>
+    </section>
+
+    <section class="section" id="operators">
+        <h2>干员展示</h2>
+        <div class="operators-grid">
+            <div class="operator-card">
+                <img src="../static/img/nts.png" alt="能天使" />
+                <div class="operator-info">
+                    <h3>能天使</h3>
+                    <p>企鹅物流的王牌快递员，精通各种枪械</p>
+                </div>
+            </div>
+            <div class="operator-card">
+                <img src="../static/img/yh.png" alt="银灰" />
+                <div class="operator-info">
+                    <h3>银灰</h3>
+                    <p>喀兰贸易的领袖，谦逊而强大的战士</p>
+                </div>
+            </div>
+            <div class="operator-card">
+                <img src="../static/img/xx.png" alt="星熊" />
+                <div class="operator-info">
+                    <h3>星熊</h3>
+                    <p>龙门近卫局局长，力大无穷的守护者</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="features">
+        <h2>游戏特色</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>策略塔防</h3>
+                <p>独特的战斗机制，需要精心规划每一步部署</p>
+            </div>
+            <div class="feature-card">
+                <h3>剧情深度</h3>
+                <p>扣人心弦的故事情节，展现末日世界的众生相</p>
+            </div>
+            <div class="feature-card">
+                <h3>角色成长</h3>
+                <p>丰富的培养系统，打造专属的战斗团队</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 明日方舟 版权所有</p>
+    </footer>
+
+    <script>
+        // 平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 页面滚动时改变导航栏样式
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+            } else {
+                header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            }
+        });
+    </script>
+</body>
+</html>

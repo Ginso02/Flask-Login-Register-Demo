@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+    </link>
+</head>
+
+<body>
+    <div class="cont-parent"> 
+        <div class="cont">
+            <div class="form sign-in">
+                <h2>Welcome back, Doctor</h2>
+                <form action="/login" method="post">
+                    <label>
+                        <span>用户名</span>
+                        <input type="text" name="username" placeholder="Username" required/>
+                    </label>
+                    <label>
+                        <span>密码</span>
+                        <input type="password" name="password" placeholder="Password" required/>
+                    </label>
+                    <button type="submit" class="submit">登录</button>
+                </form>
+                <p class="forgot-pass">忘记密码?</p>
+                <button type="button" class="fb-btn">链接 <span>facebook</span></button>
+            </div>
+            <div class="sub-cont">
+                <div class="img">
+                    <div class="img__text m--up">
+                        <h2>刚来?</h2>
+                        <p>那就<a href="/res">注册</a>一个吧!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
